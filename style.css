@@ -7,3 +7,53 @@
 .content img {
 	width: 300px;
 }
+
+html {
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  body {
+    margin: 2px;
+    padding: 2px;
+    color: #5d665b;
+    background-color: #e8eae8;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+    line-height: 200%;
+  }
+  
+  header {
+    min-width: 700px;
+    max-width: 720px;
+    border-bottom: 1px double;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  header img{
+    position: relative;
+    top: 20px;
+  }
+
+  h1 {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #7d775c;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0px;
+    clear: both;
+    min-width: 700px;
+    max-width: 720px;
+    margin: 2px;
+    padding: 2px;
+    border-top: 1px double;
+    border-bottom: 1px solid;
+    background-color: #e8eae8;
+  } 

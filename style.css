@@ -2,6 +2,7 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+  padding-top: 10px;
 }
 
 .content img {
@@ -14,7 +15,9 @@ html {
   }
   
   body {
-    margin: 2px;
+    min-width: 960px;
+    max-width: 1000px;
+    margin: 2px auto;
     padding: 2px;
     color: #5d665b;
     background-color: #e8eae8;
@@ -24,8 +27,6 @@ html {
   }
   
   header {
-    min-width: 700px;
-    max-width: 720px;
     border-bottom: 1px double;
     vertical-align: middle;
     text-align: center;
@@ -37,23 +38,65 @@ html {
   }
 
   h1 {
-    font-size: large;
+    text-transform: uppercase;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
     vertical-align: middle;
+    color: #5c5c4d;
+    display: inline;
+    position: relative;
+    top: -50px;
+    left: -20px;
+
+  }
+
+  .navRow {
+    padding-top: 15px;
+  }
+
+  .navRow a {
+    text-transform: uppercase;
     color: #7d775c;
+    text-decoration: none;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-weight: bold;
+    font-size: 14px;
   }
   
+  .navRow a:visited {
+    color: #7d775c;
+  }
+
+  .navRow a:hover {
+    color: #5c5c4d;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content p {
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
   footer {
+    text-align: center;
+    width: 1000px;
     position: fixed;
     bottom: 0px;
     clear: both;
-    min-width: 700px;
-    max-width: 720px;
     margin: 2px;
     padding: 2px;
     border-top: 1px double;
     border-bottom: 1px solid;
     background-color: #e8eae8;
   } 
+
+  footer p {
+    margin: 0px;
+  }

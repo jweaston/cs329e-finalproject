@@ -10,7 +10,13 @@
 }
 
 .map img {
+  display: inline;
   width: 800px;
+  padding-top: 20px;
+}
+
+.map p {
+  display: inline;
 }
 
 html {

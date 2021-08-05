@@ -9,6 +9,10 @@
 	width: 300px;
 }
 
+.map img {
+  width: 800px;
+}
+
 html {
     margin: 2px;
     padding: 2px;

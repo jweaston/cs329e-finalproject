@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Page</title>
+    <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+    <form id = "bac_calculator" method="post">
+        <table>    
+            <caption id = "title">BAC Calculator</caption>   
+            <tr>
+                <td class = "labels">Gender</td>
+                <td class = "textbox">Male:<input type = "radio" id = "gender" name="gender" value="male">
+                Female:<input type = "radio" id = "gender" name="gender" value="female"></td>
+            </tr>
+            <tr>
+                <td class = "labels">Weight (lbs)</td>
+                <td class = "textbox"><input type = "number" id = "weight" name = "weight"></td>
+            </tr>
+            <tr>
+                <td class = "labels">12oz Beer (~5% ABV)</td>
+                <td class = "textbox"><input type = "number" id = "beers" name = "beers"></td>
+            </tr>
+            <tr>
+                <td class = "labels">5oz Wine (~12% ABV)</td>
+                <td class = "textbox"><input type = "number" id = "wine" name = "wine"></td>
+            </tr>
+            <tr>
+                <td class = "labels">1.5oz Liqour (~40% ABV)</td>
+                <td class = "textbox"><input type = "number" id = "liquor" name = "liqour"></td>
+            </tr>
+            <tr>
+                <td class = "labels"> Time </td>
+                <td class = "textbox">Hours:<input type = "number" id = "hours" name = "hours"></td><br>
+                <td class = "textbox">Minutes:<input type = "number" id = "minutes" name = "minutes"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class = "button"><button name ="calc">Calculate</button> <input type = "reset" name = "Reset"></td>
+            </tr>
+            <tr>
+                <td class = "labels"> BAC</td>
+                <td class = "textbox"><input type = "text" id = "bac" name = "bac"></td>
+            </tr>
+        </table>
+    </form>
+        <script>
+            document.getElementById("bac_calculator").onsubmit = calculateBAC;
+            var gender;
+            var r;
+            var weight;
+            var beers;
+            var wines;
+            var liqour;
+            var drinks;
+            var hours;
+            var minutes; 
+            var bac;
+            function calculateBAC(){  
+                let form = document.getElementById("bac_calculator");
+            
+                if(form.gender.value == "male"){
+                    r = .68;
+                }
+                else{
+                    r = .55
+                }
+                weight = form.weight.value;
+                beers = form.beers.value;
+                wines = form.wine.value;
+                liqour = form.liqour.value;
+                drinks = beers + wines + liqour;
+                hours = form.hours.value;
+                minutes = form.minutes.value;
+                time = hours*60 + minutes;
+    
+                bac = (drinks*14)/(weight*453.592*r)*100;
+                form.bac.value = bac.toFixed(4);
+
+                return false;
+            }
+        </script>
+</body>
+</html>

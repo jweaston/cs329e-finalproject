@@ -19,21 +19,78 @@
                 <a href="contacts.html" target="_self">Contact Us</a><br>
             </div>
         </header>
+
         <div class="content">
 
             <div class="map">
-                <img src="images/worldmap.jpg" alt="map">
-                <p>Continent:</p>
+                <img src="images/worldmap.png" alt="map">
+                <input type="button" class="mapbutton" id="northamerica">
+                <input type="button" class="mapbutton" id="southamerica">
+                <input type="button" class="mapbutton" id="europe">
+                <input type="button" class="mapbutton" id="asia">
+                <input type="button" class="mapbutton" id="australia">
+                <input type="button" class="mapbutton" id="africa">
+                <p id="continentname">Continent:</p>
+                <p id="blurb"></p>
             </div>
 
             <div class="recipes">
             </div>
 
         </div>
+
         <footer class='footer'>
             <p>Moonshiners: Drunk on Knowledge &copy;<br>
             James Easton & Erica McCarty<br>
             July 19, 2021</p>
         </footer>
+
+        <script>
+            let continentname = document.getElementById("continentname");
+            let blurb = document.getElementById("blurb");
+
+            let northamerica = document.getElementById("northamerica");
+            northamerica.onclick = northamericaInfo;
+            function northamericaInfo () {
+                continentname.innerHTML = "Continent: North America";
+                blurb.innerHTML = "North America information placeholder"
+            }
+
+            let southamerica = document.getElementById("southamerica");
+            southamerica.onclick = southamericaInfo;
+            function southamericaInfo () {
+                continentname.innerHTML = "Continent: South America";
+                blurb.innerHTML = "South America information placeholder"
+            }
+
+            let africa = document.getElementById("africa");
+            africa.onclick = africaInfo;
+            function africaInfo () {
+                continentname.innerHTML = "Continent: Africa";
+                blurb.innerHTML = "Africa information placeholder"
+            }
+
+            let europe = document.getElementById("europe");
+            europe.onclick = europeInfo;
+            function europeInfo () {
+                continentname.innerHTML = "Continent: Europe";
+                blurb.innerHTML = "Europe information placeholder"
+            }
+
+            let asia = document.getElementById("asia");
+            asia.onclick = asiaInfo;
+            function asiaInfo () {
+                continentname.innerHTML = "Continent: Asia";
+                blurb.innerHTML = "Asia information placeholder"
+            }
+
+            let australia = document.getElementById("australia");
+            australia.onclick = australiaInfo;
+            function australiaInfo () {
+                continentname.innerHTML = "Continent: Australia";
+                blurb.innerHTML = "Australia information placeholder"
+            }
+        </script>
+
     </body>
 </html>

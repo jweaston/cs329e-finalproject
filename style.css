@@ -1,22 +1,6 @@
-.contact{
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-  padding-top: 10px;
-}
-
+/* home page */
 .content img {
 	width: 300px;
-}
-
-.map img {
-  display: inline;
-  width: 800px;
-  padding-top: 20px;
-}
-
-.map p {
-  display: inline;
 }
 
 html {
@@ -24,7 +8,7 @@ html {
     padding: 2px;
   }
   
-  body {
+body {
     min-width: 960px;
     max-width: 1000px;
     margin: 2px auto;
@@ -36,18 +20,18 @@ html {
     line-height: 200%;
   }
   
-  header {
+header {
     border-bottom: 1px double;
     vertical-align: middle;
     text-align: center;
   }
   
-  header img{
+header img{
     position: relative;
     top: 20px;
   }
 
-  h1 {
+h1 {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
@@ -62,11 +46,11 @@ html {
 
   }
 
-  .navRow {
+.navRow {
     padding-top: 15px;
   }
 
-  .navRow a {
+.navRow a {
     text-transform: uppercase;
     color: #7d775c;
     text-decoration: none;
@@ -76,25 +60,25 @@ html {
     font-size: 14px;
   }
   
-  .navRow a:visited {
+.navRow a:visited {
     color: #7d775c;
   }
 
-  .navRow a:hover {
+.navRow a:hover {
     color: #5c5c4d;
   }
 
-  .content {
+.content {
     text-align: center;
   }
 
-  .content p {
+.content p {
     padding-bottom: 30px;
     padding-top: 10px;
     font-size: 14px;
   }
 
-  footer {
+footer {
     text-align: center;
     width: 1000px;
     position: fixed;
@@ -107,6 +91,69 @@ html {
     background-color: #e8eae8;
   } 
 
-  footer p {
+footer p {
     margin: 0px;
   }
+
+/* contact page */
+.contact{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+  }
+
+/* culture page */
+.map {
+    position: relative;
+  }
+
+.map img {
+    width: 800px;
+    padding-top: 20px;
+    z-index: 1;
+  }
+
+.map p {
+  padding: 5px;
+  margin: 0px;
+}
+  
+.mapbutton {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+#northamerica {
+  top: 20%;
+  left: 19%;
+}
+
+#southamerica {
+  top: 55%;
+  left: 27%;
+}
+
+#africa {
+  top: 45%;
+  left: 48%;
+}
+
+#europe {
+  top: 18%;
+  left: 48%;
+}
+
+#asia {
+  top: 18%;
+  left: 62%;
+}
+
+#australia {
+  top: 60%;
+  left: 74%;
+}

@@ -25,28 +25,28 @@
             <caption id = "title">BAC Calculator</caption>   
             <tr>
                 <td class = "labels">Gender</td>
-                <td class = "textbox">Male:<input type = "radio" id = "gender" name="gender" value="male">
+                <td class = "textbox">Male:<input type = "radio" id = "gender" name="gender" value="male" required>
                 Female:<input type = "radio" id = "gender" name="gender" value="female"></td>
             </tr>
             <tr>
                 <td class = "labels">Weight (lbs)</td>
-                <td class = "textbox"><input type = "number" id = "weight" name = "weight"></td>
+                <td class = "textbox"><input type = "number" min=0 id = "weight" name = "weight" required></td>
             </tr>
             <tr>
                 <td class = "labels">12oz Beer (~5% ABV)</td>
-                <td class = "textbox"><input type = "number" id = "beers" name = "beers"></td>
+                <td class = "textbox"><input type = "number" min=0 id = "beers" name = "beers"></td>
             </tr>
             <tr>
                 <td class = "labels">5oz Wine (~12% ABV)</td>
-                <td class = "textbox"><input type = "number" id = "wine" name = "wine"></td>
+                <td class = "textbox"><input type = "number" min=0 id = "wine" name = "wine"></td>
             </tr>
             <tr>
                 <td class = "labels">1.5oz Liqour (~40% ABV)</td>
-                <td class = "textbox"><input type = "number" id = "liquor" name = "liqour"></td>
+                <td class = "textbox"><input type = "number"  min=0 id = "liqour" name = "liqour"></td>
             </tr>
             <tr>
                 <td class = "labels"> Time (in hours)</td>
-                <td class = "textbox"><input type = "number" id = "hours" name = "hours"></td>
+                <td class = "textbox"><input type = "number" step=".25" min=0 id = "hours" name = "hours" required></td>
             </tr>
             <tr>
                 <td></td>
@@ -85,7 +85,6 @@
                 liqour = form.liqour.value;
                 drinks = beers + wines + liqour;
                 hours = form.hours.value;
-                minutes = form.minutes.value;
                 time = hours*60 + minutes;
     
                 bac = (drinks*14)/(weight*453.592*r)*100;

@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang=en>
     <head>
         <meta charset="utf-8"/>
@@ -6,7 +8,7 @@
         <link href="style.css" rel="stylesheet">
     </head>
     
-    <body>   
+    <body style="min-height: 1900px;">   
         <header>
             <a href="final.html"><img alt="logo" src="images/Website_logo.png" width="160"></a>
             <h1>
@@ -24,7 +26,7 @@
 
             <div class="map">
                 <img src="images/worldmap.png" alt="map">
-                <input type="button" class="mapbutton" id="northamerica">
+                <input type="button" class="mapbutton" id="northamerica" value=''>
                 <input type="button" class="mapbutton" id="southamerica">
                 <input type="button" class="mapbutton" id="europe">
                 <input type="button" class="mapbutton" id="asia">
@@ -37,21 +39,25 @@
             <h2>
                 How Vodka Ruined Russia
             </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vK7l55ZOVIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vK7l55ZOVIc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <h2>
                 Apple Jack Moonshine
             </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwEwVflru_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwEwVflru_g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        
+            <p id="quizLink">Click <a href="quiz.php"> here </a>to vote for your favorite alcoholic beverage </p>
+
+        </div>
+
 
         <footer class='footer'>
             <p>Moonshiners: Drunk on Knowledge &copy;<br>
             James Easton & Erica McCarty<br>
             July 19, 2021</p>
         </footer>
+
+     
 
         <script>
             let continentname = document.getElementById("continentname");
@@ -100,6 +106,11 @@
 
             }
         </script>
+
+
+
+
+
 
     </body>
 </html>

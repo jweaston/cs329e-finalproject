@@ -8,11 +8,18 @@
     $dbName = "cs329e_mitra_jweaston";
     $database = new mysqli($server, $user, $password, $dbName);
 
-    $u_name = $_REQUEST['user'];
-    $p_word = $_REQUEST['pass'];
+    $u_name = stripInput($_REQUEST['user']);
+    $p_word = stripInput($_REQUEST['pass']);
 
 	$usr_exists = false;
 	$pw_correct = false;
+
+
+	//prevent XSS
+	function stripInput($input) {
+		return htmlentities($input, ENT_NOQUOTES);
+	}
+
 
 	$command = "SELECT * FROM final_passwd";
     $result = $database->query($command);

@@ -13,7 +13,7 @@ session_start();
 
 <body>
 	<form method="post" action="grader.php">
-		A collection of a hundred billion stars, gas, and dust is called a ____. <br>
+		What type of cactus is distilled to create tequila? <br>
         <input type="text" name="q5" size="20" required>
 		<input type="submit" value="Submit"/>
 		<input type="reset" value="Clear"/>

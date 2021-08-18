@@ -13,19 +13,19 @@ session_start();
 
 <body>
 	<form method="post" action="grader.php">
-		Stars that live the longest have ____.<br>
+		The brandy is liqour distilied from what? <br>
 			<ol type="a">
 				<li>
-					<input type="radio" name="q4" value="a" required > high mass
+					<input type="radio" name="q4" value="a" required > honey
 				</li>
 				<li>
-					<input type="radio" name="q4" value="b"> high temperature
+					<input type="radio" name="q4" value="b"> mash
 				</li>
 				<li>
-					<input type="radio" name="q4" value="c"> lots of hydrogen
+					<input type="radio" name="q4" value="c"> beer
 				</li>
 				<li>
-					<input type="radio" name="q4" value="d"> small mass
+					<input type="radio" name="q4" value="d"> wine
 				</li>
 			</ol>
 			<input type="submit" value="Submit"/>

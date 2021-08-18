@@ -51,7 +51,7 @@ elseif ($_SESSION['q#'] == 'q4'){
 
 //check question 5
 elseif ($_SESSION['q#'] == 'q5'){
-	if (trim(strtolower($_POST['q5'])) =="galaxy"){
+	if (trim(strtolower($_POST['q5'])) =="agave"){
 		$_SESSION['grade'] = $_SESSION['grade'] + 10;
 	}
 	write_grade();
@@ -61,7 +61,7 @@ elseif ($_SESSION['q#'] == 'q5'){
 
 //check question 6
 elseif ($_SESSION['q#'] == 'q6'){
-	if (trim(strtolower($_POST['q6'])) =="age"){
+	if (trim(strtolower($_POST['q6'])) =="indian pale ale"){
 		$_SESSION['grade'] = $_SESSION['grade'] + 10;
 	}
 	write_grade();

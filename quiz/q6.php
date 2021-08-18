@@ -13,7 +13,7 @@ session_start();
 
 <body>
 	<form method="post" action="grader.php">
-		The inverse of the Hubble's constant is a measure of the ___ of the universe. <br>
+		What does IPA stand for? <br>
         <input type="text" name="q6" size="20" required>
 		<input type="submit" value="Submit"/>
 		<input type="reset" value="Clear"/>

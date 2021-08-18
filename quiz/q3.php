@@ -13,19 +13,19 @@ session_start();
 
 <body>
 	<form method="post" action="grader.php">
-		The tottal amount of energy that a star emits is directly related to its ____.<br>
+		The type of alcohol that is found in consumable beverages is called ___.<br>
 		<ol type="a" >
 			<li>
-				<input type="radio" name="q3" value="a" required> surface gravity and magnetic field
+				<input type="radio" name="q3" value="a" required> Methanol
 			</li>
 			<li>
-				<input type="radio" name="q3" value="b" > radius and temperature
+				<input type="radio" name="q3" value="b" > Ethanol
 			</li>
 			<li>
-				<input type="radio" name="q3" value="c" > pressure and volume
+				<input type="radio" name="q3" value="c" > Propanol
 			</li>
 			<li>
-				<input type="radio" name="q3" value="d" > location and velocity
+				<input type="radio" name="q3" value="d" > Butanol
 			</li>
 		</ol>
 		<input type="submit" value="Submit"/>

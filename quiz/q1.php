@@ -26,7 +26,7 @@ if ($_SESSION['q#'] != 'q1'){
 
 <body>
 	<form method="post" action="grader.php">
-		According to Kepler the orbit of the earth is a circle with the sun at the center.<br>
+		Alcohol was invented by India and shared around the globe<br>
         <input type="radio" name="q1" value="true" class="ans" required> True <br>
         <input type="radio" name="q1" value="false" class="ans"> False <br>
 		<input type="submit" value="Submit"/>

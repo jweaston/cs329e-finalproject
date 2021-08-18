@@ -13,8 +13,7 @@ session_start();
 
 <body>
 	<form method="post" action="grader.php">
-		Acient astronomers did consider the heliocentric model of the solar system bu rejected it because they could not dected
-        parallax.<br>
+		Bourbon must be made out of at least 51% corn<br>
         <input type="radio" name="q2" value="true" class="ans" required> True <br>
         <input type="radio" name="q2" value="false" class="ans"> False <br>
  		<input type="submit" value="Submit"/>

@@ -1,48 +1,15 @@
 <!DOCTYPE html>
+
+
 <html lang=en>
     <head>
         <meta charset="utf-8"/>
         <title>Drunk on Knowledge</title>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-        <script src="final.js"></script>
         <link href="style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     
-    <body>   
+    <body style="min-height: 1900px;">   
         <header>
-            <table id="account">
-                <tr><td><div class="dropdown" id='logindiv' style="float:right;">
-                    <button class="dropbtn" style="font-size:12pt" onclick="show_login()"> Log In </button>
-                    <div id="login" class="dropdown-content" style="right:0">
-                        <form method="POST" class="topbtn safe" name="login" id="loginform">
-                            <label id="username" class="safe"> Username: <input name="username" type="text" id="user" class="safe"/></label>
-                            <label id="password" class="safe"> Password: <input name="password" type="password" id="pass" class="safe"/></label>
-                            <p><input type="submit" value="Enter" class="safe"/> <input type="reset" value="Clear" class="safe"/></p>
-                        </form>
-                    </div>
-                </div></td>
-                
-                <td><div class="dropdown" id='signupdiv' style="float:right;">
-                    <button class="dropbtn" style="font-size:12pt" onclick="show_signup()"> Sign Up </button>
-                    <div id="signup" class="dropdown-content" style="right:0">
-                        <form method="POST" class="topbtn safe" name="signup" id="signupform">
-                            <label class="safe"> Username: <input type="text" id="new_username" name="new_pass" class="safe"/></label>
-                            <span style="font-size:10pt;" class="safe"> (6-10 Alphanumeric characters) </span><br><br>
-                            <label class="safe"> Password: <input type="password" id="new_password" name="new_pass" class="safe"/></label>
-                            <span style="font-size:10pt;" class="safe"> (6-10 Alphanumeric characters, must have 1 uppercase, 1 lowercase, 1 number) </span><br><br>
-                            <label class="safe"> Re-Enter Password: <input type="password" id="re_password" name="re_pass" class="safe"/></label>
-                            <p><input type="submit" value="Enter" class="safe" /> <input type="reset" value="Clear" class="safe"/></p>
-                        </form>
-                    </div>
-                </div></td></tr>
-        
-                <tr><td colspan=2><div id="signout" class="signout topbtn safe" style="float:right;">
-                    <button style="font-size:12pt" onclick="logout();"> Sign Out </button>
-                </div></td></tr>
-            </table>
-
             <a href="final.html"><img alt="logo" src="images/Website_logo.png" width="160"></a>
             <h1>
                 Drunk on Knowledge
@@ -53,15 +20,13 @@
                 <a href="culture_page.php" target="_self">Culture</a>
                 <a href="contacts.html" target="_self">Contact Us</a><br>
             </div>
-            
-
         </header>
 
         <div class="content">
 
             <div class="map">
                 <img src="images/worldmap.png" alt="map">
-                <input type="button" class="mapbutton" id="northamerica">
+                <input type="button" class="mapbutton" id="northamerica" value=''>
                 <input type="button" class="mapbutton" id="southamerica">
                 <input type="button" class="mapbutton" id="europe">
                 <input type="button" class="mapbutton" id="asia">
@@ -74,21 +39,25 @@
             <h2>
                 How Vodka Ruined Russia
             </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vK7l55ZOVIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vK7l55ZOVIc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <h2>
                 Apple Jack Moonshine
             </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwEwVflru_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwEwVflru_g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        
+            <p id="quizLink">Click <a href="quiz.php"> here </a>to vote for your favorite alcoholic beverage </p>
+
+        </div>
+
 
         <footer class='footer'>
             <p>Moonshiners: Drunk on Knowledge &copy;<br>
             James Easton & Erica McCarty<br>
             July 19, 2021</p>
         </footer>
+
+     
 
         <script>
             let continentname = document.getElementById("continentname");
@@ -137,6 +106,11 @@
 
             }
         </script>
+
+
+
+
+
 
     </body>
 </html>

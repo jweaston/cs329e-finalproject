@@ -44,24 +44,24 @@
             </div></td></tr>
         </table>
 
-        <img src="images/Website_logo.png" width="160">
+        <a href="final.html"><img alt="logo" src="images/Website_logo.png" width="160"></a>
         <h1>
             Drunk on Knowledge
         </h1>
         <div class="navRow">
             <a href="history_page.html" target="_self">History</a>
             <a href="science_page.html" target="_self">Science</a>
-            <a href="culture_page.html" target="_self">Culture</a>
+            <a href="culture_page.php" target="_self">Culture</a>
             <a href="contacts.html" target="_self">Contact Us</a><br>
         </div>
     </header>
     <form id = "bac_calculator" method="post">
         <table>    
-            <caption id = "title">BAC Calculator</caption>   
+            <caption id = "title"><span>BAC Calculator</span></caption>   
             <tr>
                 <td class = "labels">Gender</td>
-                <td class = "textbox">Male:<input type = "radio" id = "gender" name="gender" value="male" required>
-                Female:<input type = "radio" id = "gender" name="gender" value="female"></td>
+                <td class = "textbox">Male:<input type = "radio" id = "male" name="male" value="male" required>
+                Female:<input type = "radio" id = "female" name="female" value="female"></td>
             </tr>
             <tr>
                 <td class = "labels">Weight (lbs)</td>
@@ -93,6 +93,17 @@
             </tr>
         </table>
     </form>
+    <h2>
+        Avoiding a Hangover
+    </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GFeie_OHvH8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>
+        Adam Ruins Drinking
+    </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sdKlRYha_Yc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    
         <script>
             document.getElementById("bac_calculator").onsubmit = calculateBAC;
             var gender;

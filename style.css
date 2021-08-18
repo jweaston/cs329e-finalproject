@@ -1,6 +1,7 @@
 /* home page */
 .content img {
 	width: 300px;
+  margin-top: 20px;
 }
 
 html {
@@ -18,6 +19,7 @@ body {
     font-family: Verdana, Geneva, Arial, sans-serif;
     font-size: small;
     line-height: 200%;
+    text-align: center;
   }
   
 header {
@@ -201,4 +203,35 @@ footer p {
 #australia {
   top: 60%;
   left: 74%;
+}
+
+/* videos */
+iframe {
+  margin-bottom: 100px;
+}
+
+/* science page */
+#bac_calculator table{
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#bac_calculator span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#quiz {
+  padding-bottom: 100px;
+}
+
+/* quiz */
+#drinkquiz {
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+#response {
+  font-size: 16px;
+  padding-top: 40px;
 }

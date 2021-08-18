@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	error_reporting(E_ALL);
     ini_set("display_errors", "on");
 
@@ -40,7 +41,10 @@
 			setcookie('logged_in', true, time() + 3600, '/');
 			setcookie('user', $u_name, time() + 3600, '/');
 			echo "You've successfully logged in!";
-			
+			$_SESSION['username'] = $u_name;
+			$_SESSION['start'] = time();
+			$_SESSION['q#'] = "q1";
+			$_SESSION['grade'] = 0;
 		}
 		else {
 			echo "Error: Incorrect password.";

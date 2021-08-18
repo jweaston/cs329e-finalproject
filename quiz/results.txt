@@ -1,0 +1,3 @@
+james:60
+babbage:10
+jweaston:60

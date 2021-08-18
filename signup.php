@@ -10,6 +10,9 @@
 
     $u_name = $_REQUEST['username'];
     $p_word = $_REQUEST['password'];
+	$u_name = $database->real_escape_string($u_name);
+	$p_word = $database->real_escape_string($p_word);
+
 
     $command = "SELECT * FROM final_passwd WHERE u_name = '$u_name'";
     $query = $database->query($command);
@@ -18,9 +21,9 @@
         $command = "INSERT INTO final_passwd VALUES ('$u_name','$p_word')";
         $database->query($command) or die($database->error);
         echo "registered";
-        echo "<script> alert('You have been registered');</script>";
+        echo "You have been registered";
     }
     else {
-        echo "<script> window.location.href='registered.html';</script>";
+        echo "This username already exist";
     }
 ?>

@@ -9,7 +9,9 @@
     $database = new mysqli($server, $user, $password, $dbName);
 
     $u_name = $_REQUEST['user'];
+	$u_name = $database->real_escape_string($u_name);
     $p_word = $_REQUEST['pass'];
+	$p_word = $database->real_escape_string($p_word);
 
 	$usr_exists = false;
 	$pw_correct = false;

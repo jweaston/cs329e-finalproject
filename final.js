@@ -28,6 +28,7 @@ window.onclick = function(event) {
 
 // Attempt to make website check for cookie on page load
 $(document).ready(function (){
+    document.getElementById('display_user').innerHTML = $.cookie('user');
 	if ($.cookie('logged_in')!=null) {
 		$('#logindiv').hide();
 		$('#signupdiv').hide();
